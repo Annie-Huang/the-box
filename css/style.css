@@ -34,6 +34,47 @@ img {
 
 .location {
   color: var(--clr-icons);
-  margin: 0;
+  margin: 0 0 1.5em;
   font-size: 1.5rem;
 }
+
+header {
+  display: flex;
+  align-items: center; /* vertically center */
+  margin: 2em 0;
+}
+
+nav {
+  /*outline: 2px solid red;*/
+  flex-grow: 1; /* the same as width: 100%; */
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link {
+  color: var(--clr-text);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
