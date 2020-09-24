@@ -88,6 +88,11 @@ nav {
   text-decoration: none;
 }
 
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--clr-accent);
+}
+
 .secondary-images {
   display: flex;
   gap: 0.5em;
@@ -98,7 +103,10 @@ footer {
   margin-top: 2em;
 }
 
-
+.social-link:hover,
+.social-link:focus {
+  opacity: 0.5;
+}
 
 
 
