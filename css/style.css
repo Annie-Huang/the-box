@@ -24,6 +24,17 @@ img {
   max-width: 100%;
 }
 
+.btn {
+  cursor: pointer;
+  display: inline-block;
+
+  border: 0;
+  background: transparent;
+  color: var(--clr-text);
+  font-size: 1.125rem;
+  padding: 0.5em;
+}
+
 .title {
   color: var(--clr-accent);
   text-transform: uppercase;
@@ -58,7 +69,10 @@ nav {
   text-decoration: none;
 }
 
-
+.secondary-images {
+  display: flex;
+  gap: 0.5em;
+}
 
 
 
