@@ -34,6 +34,8 @@ img {
   font-size: 1.125rem;
   padding: 0.5em;
   position: relative;
+  align-self: start; /* when this is in a grid, it will make it align up vertically */
+  justify-self: start; /* when this is in a grid, it will make it align left horizontally. justify-self only work for grid, not flexbox */
 }
 
 .btn::after {
