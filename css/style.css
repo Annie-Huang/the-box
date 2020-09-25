@@ -157,7 +157,7 @@ footer {
     background-color: var(--clr-bg-light);
     top: 0;
     bottom: 0;
-    left: 0;
+    left: -2em; /* this is the same as the gap so the text will touch the border */
     right: 0;
     grid-column: 3 / 5;
     z-index: -10;
