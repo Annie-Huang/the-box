@@ -126,12 +126,25 @@ footer {
     grid-column: 2 / 5;
   }
   main {
-    grid-column: 2 / -1;
+    grid-column: 2 / -1;  /* -1 means goes all the way to the end */
 
     display: grid;
-    /* this following in inherit all the previous grid-template-columns info from parent*/
+    /* this following in inherit all the previous grid-template-columns info from parent
+       This does not meant it will divide by 5 again, but rather, it will just take the original
+       of the parent columns, meant the subgrid will only have 4 columns because the parent
+       only occupy 4 columns
+    */
     grid-template-columns: subgrid;
   }
+
+  .title {
+    grid-column: 1 / 3;
+  }
+
+  .primary-image {
+    grid-column: 2 / -1;
+  }
+
 
 
   footer {
