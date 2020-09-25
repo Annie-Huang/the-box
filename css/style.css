@@ -135,6 +135,12 @@ footer {
        only occupy 4 columns
     */
     grid-template-columns: subgrid;
+
+    /*
+       This will force .description to move from column 1/2 row 5/6 to column 1/2 row 3/4
+       and <button> to move from column 2/3 row 5/6 to column 1/2 row 4/5
+     */
+    grid-auto-flow: dense;
   }
 
   .title {
