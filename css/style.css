@@ -127,7 +127,13 @@ footer {
   }
   main {
     grid-column: 2 / -1;
+
+    display: grid;
+    /* this following in inherit all the previous grid-template-columns info from parent*/
+    grid-template-columns: subgrid;
   }
+
+
   footer {
     grid-column:  2 / 3;
   }
