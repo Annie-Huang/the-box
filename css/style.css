@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
-* {
-  outline: 2px solid red;
-}
+/* User this to show position for each section*/
+/** {*/
+/*  outline: 2px solid red;*/
+/*}*/
 
 :root {
   --clr-icons: #929292;
@@ -170,7 +171,7 @@ footer {
     top: 0;
     bottom: 0;
     left: -2em; /* this is the same as the gap so the text will touch the border */
-    right: 0;
+    right: -2em;
     grid-column: 3 / 5;
     z-index: -10;
   }
@@ -201,7 +202,16 @@ footer {
   }
 }
 
+@media (min-width: 1200px) {
+  main::after {
+    grid-column: 3 / 4; /* 800px width: 3 / 5 */
+  }
 
+  .nav,
+  .secondary-images {
+    grid-column: 2 / 3; /* 800px width: 2 / 5 */
+  }
+}
 
 
 
