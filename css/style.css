@@ -132,7 +132,15 @@ footer {
 
   header {
     grid-column: 2 / 5;
+    display: grid;
+    grid-template-columns: subgrid;
   }
+
+  .nav {
+    /* Because header is 2 /5 , so nav 2 / 5 means it will leave the first column to logo and take the rest of the space */
+    grid-column: 2 / 5;
+  }
+
   main {
     grid-column: 2 / -1;  /* -1 means goes all the way to the end */
 
