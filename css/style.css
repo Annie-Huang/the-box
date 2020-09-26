@@ -157,6 +157,11 @@ footer {
     */
     grid-template-columns: subgrid;
 
+    /* When the window is huge, all the left hand info: <p>, <button> etc, got shift upwards
+       don't look nice, use grid-auto-rows to fix it.
+    */
+    grid-auto-rows: min-content;
+
     /*
        This will force .description to move from column 1/2 row 5/6 to column 1/2 row 3/4
        and <button> to move from column 2/3 row 5/6 to column 1/2 row 4/5
@@ -188,11 +193,11 @@ footer {
 
   .primary-image {
     grid-column: 2 / -1;
-    grid-row: 1 / 4;
+    grid-row: 1 / span 4; /* make the image cover up <title><p><p><button> 4 elements */
     z-index: -1;
     height: 100%;
-    max-height: 500px;
-    width: 100%;
+    max-height: 500px; /* this can stop the image to become a super tall image */
+    width: min(100%, 1000px);
     object-fit: cover;
   }
 

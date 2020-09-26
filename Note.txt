@@ -9,3 +9,5 @@ https://caniuse.com/?search=subgrid
 This will only be used for firefox because only firefox support subgrid atm
 
 C:\react\the-box>npm init -y
+
+Carefully reading the git checkin message, it usually explain the reason for certain changes.
